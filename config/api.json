@@ -1,0 +1,40 @@
+{
+    "host": "http://localhost:8000",
+    "routes": {
+        "user": {
+            "me": {
+                "read": "user/me",
+                "update": "user/me",
+                "password": "user/me/password"
+            },
+            "users": {
+                "list": "users"
+            },
+            "create": "user",
+            "read": "user/",
+            "update": "user",
+            "delete": "user"
+        },
+        "user_role": {
+            "roles": {
+                "list": "userroles"
+            },
+            "create": "userrole",
+            "read": "userrole/",
+            "update": "userrole",
+            "delete": "userrole"
+        },
+        "order": {
+            "orders": {
+                "list": "orders"
+            },
+            "read": "order",
+            "update": "order"
+        },
+        "queue": {
+            "queues": {
+                "list": "queues"
+            }
+        }
+    }
+}
